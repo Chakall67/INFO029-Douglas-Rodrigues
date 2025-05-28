@@ -16,7 +16,7 @@
 //  Matrícula: 20241160032
 //  Semestre: 2024.2
 
-// #################################################
+
 
 #include <stdio.h>
 #include "DouglasRodrigues20241160032.h" // Substitua pelo seu arquivo de header renomeado
