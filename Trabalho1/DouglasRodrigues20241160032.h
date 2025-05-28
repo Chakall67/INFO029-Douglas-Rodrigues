@@ -11,17 +11,17 @@
 //  O aluno deve preencher seus dados abaixo, e implementar as questões do trabalho
 
 //  ----- Dados do Aluno -----
-//  Nome:
-//  email:
-//  Matrícula:
-//  Semestre:
+//  Nome: Douglas dos Santos Rodrigues
+//  email: douglas0sr@gmail.com
+//  Matrícula: 20241160032
+//  Semestre: 2024.2
 
 //  Copyright © 2016 Renato Novais. All rights reserved.
-// Última atualização: 07/05/2021
+//  Última atualização: 07/05/2021
 
 // #################################################
-#ifndef TRABALHO1_PRIMEIROULTIMONOMEMATRICULA_H
-#define TRABALHO1_PRIMEIROULTIMONOMEMATRICULA_H
+#ifndef TRABALHO1_DOUGLASRODRIGUES20241160032_H
+#define TRABALHO1_DOUGLASRODRIGUES20241160032_H
 
 typedef struct DQ
 {
@@ -49,7 +49,6 @@ int q3(char *texto, char c, int isCaseSensitive);
 int q4(char *strTexto, char *strBusca, int posicoes[30]);
 int q5(int num);
 int q6(int numerobase, int numerobusca);
-int q7(char matriz[8][10], char palavra[5]);
 DataQuebrada quebraData(char data[]);
 
-#endif  // TRABALHO1_PRIMEIROULTIMONOMEMATRICLA_H
+#endif  // TRABALHO1_DOUGLASRODRIGUES20241160032_H
