@@ -16,10 +16,7 @@
 //  Matrícula: 20241160032
 //  Semestre: 2024.2
 
-//  Copyright © 2016 Renato Novais. All rights reserved.
-//  Última atualização: 07/05/2021
 
-// #################################################
 #ifndef TRABALHO1_DOUGLASRODRIGUES20241160032_H
 #define TRABALHO1_DOUGLASRODRIGUES20241160032_H
 
