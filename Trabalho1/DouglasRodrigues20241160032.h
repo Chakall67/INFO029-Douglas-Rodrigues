@@ -14,7 +14,7 @@
 //  Nome: Douglas dos Santos Rodrigues
 //  email: douglas0sr@gmail.com
 //  Matrícula: 20241160032
-//  Semestre: 2024.2
+//  Semestre: 2025.1
 
 
 #ifndef TRABALHO1_DOUGLASRODRIGUES20241160032_H
