@@ -1,16 +1,16 @@
 // #################################################
 //  Instituto Federal da Bahia
 //  Salvador - BA
-//  Curso de Análise e Desenvolvimento de Sistemas http://ads.ifba.edu.br
-//  Disciplina: INF029 - Laboratório de Programação
+//  Curso de AnÃ¡lise e Desenvolvimento de Sistemas http://ads.ifba.edu.br
+//  Disciplina: INF029 - LaboratÃ³rio de ProgramaÃ§Ã£o
 //  Professor: Renato Novais - renato@ifba.edu.br
 
-//  ----- Orientações gerais -----
-//  Descrição: esse arquivo contém exemplos de testes das questões do trabalho.
+//  ----- OrientaÃ§Ãµes gerais -----
+//  DescriÃ§Ã£o: esse arquivo contÃ©m exemplos de testes das questÃµes do trabalho.
 //  o aluno pode incrementar os testes
 
-//  Copyright © 2016 Renato Novais. All rights reserved.
-// Última atualização: 19/08/2016 - 12/12/2018
+//  Copyright Â© 2016 Renato Novais. All rights reserved.
+// Ãšltima atualizaÃ§Ã£o: 19/08/2016 - 12/12/2018
 
 // #################################################
 
@@ -20,20 +20,21 @@
 //renomeie o arquivo do include abaixo para PrimeiroUltimoNomeMATRICULA.h
 #include "DouglasRodrigues20241160032.h"
 
-void testSomar();    //função utilizada para testes
-void testFatorial(); //função utilizada para testes
+void testSomar();    //funÃ§Ã£o utilizada para testes
+void testFatorial(); //funÃ§Ã£o utilizada para testes
 void testQ1();
 void testQ2();
 void testQ3();
 void testQ4();
 void testQ5();
 void testQ6();
+void testQ7();
 
 int main(){
     testSomar();
     testFatorial();
     printf("---------q1---------\n");
-    testQ1(); 
+    testQ1();
     printf("---------q2---------\n");
     testQ2();
     printf("---------q3---------\n");
@@ -41,9 +42,11 @@ int main(){
     printf("---------q4---------\n");
     testQ4();
     printf("---------q5---------\n");
-    testQ5(); 
+    testQ5();
     printf("---------q6---------\n");
-    testQ6(); 
+    testQ6();
+    printf("---------q7---------\n");
+    testQ7();
 }
 
 void testSomar(){
@@ -154,7 +157,7 @@ void testQ4(){
     {
         posicoes[i] = -1;
     }
-    strcpy(strTexto, "Laboratorio de programacao: para ratos de programação");
+    strcpy(strTexto, "Laboratorio de programacao: para ratos de programaÃ§Ã£o");
     strcpy(strBusca, "rato");
     printf("%d\n", q4(strTexto, strBusca, posicoes) == 2);
     printf("%d\n", posicoes[0] == 5);
@@ -166,7 +169,7 @@ void testQ4(){
     {
         posicoes[i] = -1;
     }
-    strcpy(strTexto, "Olá, o mundo é muito grande. Tem muitas pessoas, e muitos problemas");
+    strcpy(strTexto, "OlÃ¡, o mundo Ã© muito grande. Tem muitas pessoas, e muitos problemas");
     strcpy(strBusca, "mui");
     printf("%d\n", q4(strTexto, strBusca, posicoes) == 3);
     printf("%d\n", posicoes[0] == 16);
@@ -191,4 +194,39 @@ void testQ6(){
     printf("%d\n", q6(34567368, 4576) == 0);
     printf("%d\n", q6(3539343, 3) == 4);
     printf("%d\n", q6(3539343, 39) == 1);
+}
+
+void testQ7()
+{
+    char matrix[8][10] = {
+        { 'Q', 'M', 'J', 'D', 'L', 'A', 'Z', 'F', 'C', 'R' },
+        { 'N', 'B', 'Y', 'G', 'P', 'S', 'K', 'H', 'E', 'X' },
+        { 'V', 'O', 'W', 'U', 'T', 'I', 'Z', 'A', 'L', 'C' },
+        { 'M', 'Q', 'B', 'D', 'N', 'F', 'R', 'J', 'G', 'E' },
+        { 'H', 'S', 'K', 'T', 'U', 'X', 'W', 'O', 'P', 'Y' },
+        { 'C', 'Z', 'A', 'I', 'L', 'M', 'V', 'G', 'N', 'B' },
+        { 'D', 'F', 'E', 'H', 'S', 'K', 'J', 'Q', 'R', 'T' },
+        { 'U', 'X', 'Y', 'W', 'V', 'O', 'P', 'N', 'M', 'L' }
+    };
+    char stringBusca [6] = { 'F', 'E', 'H', 'S', 'K'};
+    printf("%d\n", q7(matrix, stringBusca) == 1);
+    strcpy(stringBusca, "KJQRT");
+    printf("%d\n", q7(matrix, stringBusca) == 1);
+    strcpy(stringBusca, "AATOK");
+    printf("%d\n", q7(matrix, stringBusca) == 0);
+    strcpy(stringBusca, "LTBON");
+    printf("%d\n", q7(matrix, stringBusca) == 1);
+    strcpy(stringBusca, "UDWBQ");
+    printf("%d\n", q7(matrix, stringBusca) == 1);
+    strcpy(stringBusca, "NXVQM");
+    printf("%d\n", q7(matrix, stringBusca) == 1);
+    strcpy(stringBusca, "XRAER");
+    printf("%d\n", q7(matrix, stringBusca) == 1);
+    strcpy(stringBusca, "NTAFU");
+    printf("%d\n", q7(matrix, stringBusca) == 1);
+    strcpy(stringBusca, "WOPYC");
+    printf("%d\n", q7(matrix, stringBusca) == 0);
+    strcpy(stringBusca, "DBQMV");
+    printf("%d\n", q7(matrix, stringBusca) == 0);
+
 }
