@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include "DouglasRodrigues20241160032.h"
-#include "DouglasRodrigues20241160032.c"
+
 
 void show_log(char *str);
 
